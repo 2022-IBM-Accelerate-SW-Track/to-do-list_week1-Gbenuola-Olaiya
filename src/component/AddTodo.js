@@ -37,24 +37,23 @@ class AddTodo extends Component {
         // 2. The return should also include a button with the handleSubmit function from above that is passed into
         // an OnClick event.
         // 3. The value of the text field also should reflect the local state of this component.
-        <div>
-          <TextField
-            label="Add New Item"
-            variant="outlined"
-            onChange={this.handleChange}
-            value={this.state.content}
-          />
-          <Button
-            style={{ marginLeft: "10px" }}
-            onClick={this.handleSubmit}
-            variant="contained"
-            color="primary"
-          >
-            Add
-          </Button>
-        </div>
+            <div>
+              <TextField
+                label="Add New Item"
+                variant="outlined"
+                onChange={this.handleChange}
+                value={this.state.content}></TextField>
+              <Button
+                style={{ marginLeft: "10px" }}
+                onClick={this.handleSubmit}
+                variant="contained"
+                color="primary"
+              >
+                Add
+              </Button>
+            </div>
       );
     }
-  }
+}
   
   export default AddTodo;
